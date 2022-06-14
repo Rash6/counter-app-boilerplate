@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <h2 data-testid="counter-value">{counter}</h2>
-      <button onClick={handleClickdec} data-testid="counter-decrement-button">-</button>
+      <button disabled={counter===0?true:false} onClick={handleClickdec} data-testid="counter-decrement-button">-</button>
       <button onClick={handleClickinc} data-testid="counter-increment-button">+</button>
     </div>
   );
